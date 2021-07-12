@@ -55,7 +55,7 @@ function draw() {
             platypus.velocityY = -12;
         }
 
-        swamp.velocityX = -(2 + score / 2000);
+        swamp.velocityX = -(2 + score / 1000);
 
         if(swamp.x < 200) {
             swamp.x = swamp.width/4;
@@ -89,7 +89,7 @@ function spawnDuck() {
   if(frameCount % 120 === 0) {
     duck = createSprite(550,360);
     duck.addImage(duck_walking);
-    duck.velocityX = -(7.5 + score / 500);
+    duck.velocityX = -(7.5 + score / 200);
     duck.scale = 0.04;
     duck.lifetime = 600;
     ducksGroup.add(duck);    
